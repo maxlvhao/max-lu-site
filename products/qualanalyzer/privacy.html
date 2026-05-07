@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — LLM QualAnalyzer</title>
+  <meta name="description" content="Privacy policy for the LLM QualAnalyzer Chrome extension.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <nav>
+        <a href="/products/qualanalyzer/">&larr; LLM QualAnalyzer</a>
+        <span><a href="/">max-lu.com</a></span>
+      </nav>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="muted small"><strong>Last updated:</strong> March 31, 2026</p>
+
+    <p>LLM QualAnalyzer is a free, open-source Chrome extension built for academic researchers. This privacy policy explains how the extension handles your data.</p>
+
+    <h2>The short version</h2>
+    <p>LLM QualAnalyzer does not collect, store, or transmit your data to any server we operate. We have no servers. All your data stays in your browser and your own Google Workspace.</p>
+
+    <h2>What data the extension accesses</h2>
+
+    <h3>Google account information</h3>
+    <p>When you sign in with Google, the extension receives your name, email address, and profile picture through Google OAuth. This information is used only to display your account in the extension and to authenticate API calls to Google on your behalf. It is stored locally in your browser's Chrome storage and is never sent anywhere else.</p>
+
+    <h3>Google Workspace data</h3>
+    <p>The extension accesses your Google Docs (read-only) and Google Sheets (read and write) through Google's official APIs, using the permissions you grant during sign-in. This access is used solely to read your research data from Docs, write analysis results to Sheets, and support DOCX file conversion through Google Drive. The extension does not access any files you have not explicitly opened or selected.</p>
+
+    <h3>LLM API keys</h3>
+    <p>You provide your own API keys for third-party LLM services (such as OpenAI, Anthropic, or OpenRouter). These keys are stored locally in your browser's Chrome storage. They are sent only to the respective API provider when you run an analysis job, and to no one else.</p>
+
+    <h3>Analysis prompts and results</h3>
+    <p>The prompts you create and the analysis results you receive are stored locally in your browser. When you run a job, your prompt and the selected data are sent to the LLM provider you chose (e.g., OpenAI, Anthropic, or OpenRouter) for processing. The results are written back to your Google Sheet. No prompts or results are sent to us or any other party.</p>
+
+    <h2>What data we collect</h2>
+    <p>None. We do not operate any servers, databases, or analytics services. We do not collect usage data, telemetry, crash reports, or any other information about how you use the extension.</p>
+
+    <h2>Third-party services</h2>
+    <p>The extension communicates with the following third-party services, but only when you initiate an action:</p>
+    <ul>
+      <li><strong>Google APIs</strong> (docs.googleapis.com, sheets.googleapis.com, www.googleapis.com) — to access your Google Workspace data using your Google account credentials</li>
+      <li><strong>OpenAI API</strong> (api.openai.com) — to process analysis jobs, only when you provide an OpenAI API key and run a job</li>
+      <li><strong>Anthropic API</strong> (api.anthropic.com) — to process analysis jobs, only when you provide an Anthropic API key and run a job</li>
+      <li><strong>OpenRouter API</strong> (openrouter.ai) — to process analysis jobs through OpenRouter's model routing service, only when you provide an OpenRouter API key and run a job</li>
+      <li><strong>Local Ollama</strong> (localhost:11434) — to process analysis jobs using locally-running models, only when you configure and use this option</li>
+    </ul>
+    <p>Each of these services has its own privacy policy. We encourage you to review them.</p>
+
+    <h2>Data storage and retention</h2>
+    <p>All extension data (settings, API keys, job history, prompts) is stored locally in your browser using Chrome's built-in storage API. This data persists until you either clear it through the extension's settings or uninstall the extension, at which point Chrome removes all associated data.</p>
+
+    <h2>Data sharing</h2>
+    <p>We do not share, sell, rent, or trade any user data with anyone. We cannot, because we do not have access to it.</p>
+
+    <h2>Children's privacy</h2>
+    <p>This extension is designed for academic researchers and is not directed at children under 13.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we update this privacy policy, we will update the "Last updated" date at the top. Since the extension is open source, all changes are visible in the public repository.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, you can reach the developer at <a href="mailto:maxlvhao@gmail.com">maxlvhao@gmail.com</a>.</p>
+
+    <h2>Open source</h2>
+    <p>LLM QualAnalyzer is open-source software. You can review the complete source code at <a href="https://github.com/maxlvhao/llm_qual_analyzer">github.com/maxlvhao/llm_qual_analyzer</a> to verify the claims made in this privacy policy.</p>
+
+    <footer>
+      <span>&copy; <span id="year"></span> Max Lu</span>
+      <span>
+        <a href="/products/qualanalyzer/">Back to product</a> &middot;
+        <a href="/">max-lu.com</a>
+      </span>
+    </footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

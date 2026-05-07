@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM QualAnalyzer — Chrome extension for qualitative coding</title>
+  <meta name="description" content="LLM QualAnalyzer is a free, open-source Chrome extension that helps academic researchers run LLM-powered qualitative coding directly inside Google Sheets.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <nav>
+        <a href="/">&larr; max-lu.com</a>
+        <span><a href="https://github.com/maxlvhao/llm_qual_analyzer">GitHub</a></span>
+      </nav>
+    </header>
+
+    <h1>LLM QualAnalyzer</h1>
+    <p class="lead">A free, open-source Chrome extension that brings LLM-powered qualitative coding into Google Sheets, built for academic researchers.</p>
+
+    <div class="button-row">
+      <a class="button" href="https://chromewebstore.google.com/detail/llm-qualanalyzer/ndadgbdohohicninakmhdnllknkbjggj">Install from Chrome Web Store</a>
+      <a class="button button-secondary" href="https://github.com/maxlvhao/llm_qual_analyzer">View source on GitHub</a>
+    </div>
+
+    <h2>What it does</h2>
+    <p>LLM QualAnalyzer lets researchers apply large language models to qualitative data — interview transcripts, open-ended survey responses, field notes — without leaving their existing workflow. You write your coding prompt once, point the extension at a Google Sheet of data, and it codes each row using the LLM provider of your choice.</p>
+
+    <p>It is designed for the realities of academic qualitative work: reproducibility, transparent prompts, full control over which model is used, and no third-party servers handling your data.</p>
+
+    <h2>How it works</h2>
+    <ol>
+      <li>Sign in with your Google account so the extension can read your Docs and read/write your Sheets.</li>
+      <li>Provide your own API key for OpenAI, Anthropic, OpenRouter, or run a local model through Ollama.</li>
+      <li>Define your coding prompt and pick the column of data to analyze.</li>
+      <li>Run the job. Results are written back to your Google Sheet, alongside the original data.</li>
+    </ol>
+
+    <h2>Privacy</h2>
+    <p>The extension does not send your data to any server operated by us. We have no servers. Your prompts, results, and API keys stay in your browser and your own Google Workspace. LLM requests go directly from your browser to the provider you configured.</p>
+    <p>Read the full <a href="/products/qualanalyzer/privacy.html">privacy policy</a>.</p>
+
+    <h2>Open source</h2>
+    <p>The complete source code is published at <a href="https://github.com/maxlvhao/llm_qual_analyzer">github.com/maxlvhao/llm_qual_analyzer</a>. Issues and pull requests are welcome.</p>
+
+    <h2>Contact</h2>
+    <p>Questions, bug reports, or feature requests: <a href="mailto:maxlvhao@gmail.com">maxlvhao@gmail.com</a> or open an issue on GitHub.</p>
+
+    <footer>
+      <span>&copy; <span id="year"></span> Max Lu</span>
+      <span>
+        <a href="/products/qualanalyzer/privacy.html">Privacy</a> &middot;
+        <a href="https://github.com/maxlvhao/llm_qual_analyzer">GitHub</a> &middot;
+        <a href="mailto:maxlvhao@gmail.com">Contact</a>
+      </span>
+    </footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
