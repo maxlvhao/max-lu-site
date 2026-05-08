@@ -1,0 +1,15 @@
+<!--
+  LLM QualAnalyzer icon — master source.
+  Concept: classical Didot curly quote (academic, retro) +
+  single cyan punctum dot (modern, futurist accent).
+  Burgundy (#7f1d1d) + cream (#fef3c7) + cyan (#22d3ee).
+  Optical sizing: at 16px the typeface is swapped to Baskerville and
+  the dot is enlarged proportionally for legibility. See generate.sh.
+-->
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="96" fill="#7f1d1d"/>
+  <text x="256" y="356" text-anchor="middle"
+        font-family="Didot, 'GFS Didot', serif"
+        font-size="600" fill="#fef3c7">“</text>
+  <circle cx="416" cy="416" r="16" fill="#22d3ee"/>
+</svg>
